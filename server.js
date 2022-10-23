@@ -6,10 +6,16 @@ const bodyparser = require("body-parser");
 const path = require("path");
 dotenv.config({ path: "config.env" });
 const PORT = process.env.PORT || 8080;
-//prettier oto save :option+shift+f
+//prettier to save :option+shift+f
+const connectDB = require('./server/database/connection')
+
 
 //log request
 app.use(morgan("tiny"));
+
+//mongodb connection
+connectDB();
+
 
 //parse request to bodyparser
 app.use(bodyparser.urlencoded({ extended: true }));
@@ -22,15 +28,9 @@ app.use("/css", express.static(path.resolve(__dirname, "assets/css")));
 app.use("/img", express.static(path.resolve(__dirname, "assets/img")));
 app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 
-app.get("/", (req, res) => {
-  res.render("index");
-});
-app.get("/add-user", (req, res) => {
-  res.render("add_user");
-});
-app.get("/update-user", (req, res) => {
-    res.render("update_user");
-  });
+//load routers
+app.use('/',require('./server/routes/router'))
+
 app.listen(3000, () => {
   console.log(`server is running on port http://localhost:${PORT}`);
 });
