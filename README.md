@@ -40,7 +40,7 @@
 - ```shell
   npm i
   ```
-  - ```shell
+- ```shell
   npm start
   ```
   
