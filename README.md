@@ -6,7 +6,7 @@
 - Secondly, we can list all user.
 - Thirdly, we can edit-update the user.
 - Fourthly, we can delete the user.
-- Watch it this project on [YouTube(https://youtu.be/rqcRi7j8xJY) 
+- Watch it this project on [YouTube](https://youtu.be/rqcRi7j8xJY) 
 
 
 
