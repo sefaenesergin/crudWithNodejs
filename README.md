@@ -1,8 +1,8 @@
 # ♣️ Create Update Read Delete Application with Nodejs&ExpressJs ♣️
     It is a web application with Nodejs. We can create new user and also edit, delete and list all users.
 
-## What's it do that application?
-- Firstly, we can create new user.
+## What's it do that web application?
+- Firstly, we can create new user and insert this new user to database.
 - Secondly, we can list all user.
 - Thirdly, we can edit-update the user.
 - Fourthly, we can delete the user.
@@ -45,6 +45,10 @@
   ```
   
  Now open the http://localhost:3000 on your browser engine. 
+
+## Techs
+-Nodejs, ExpressJs, MongoDb
+
 
 - Check my [LinkedIn](https://www.linkedin.com/in/sefa-enes-ergin/).
 - Contact me! <sefaenesergin@gmail.com>
